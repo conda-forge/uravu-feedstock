@@ -42,7 +42,9 @@ tests:
       imports:
         - uravu
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Bayesian methods for analytical relationships
